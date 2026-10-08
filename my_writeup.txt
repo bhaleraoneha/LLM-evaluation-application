@@ -1,0 +1,13 @@
+What I built: A Q&A bot that answers from documents (RAG).
+Test set: 20 questions with correct answers.
+
+Metrics (an AI judge scores each answer from 0 to 1):
+- Faithfulness: checks if the answer only uses facts from the documents.
+- Answer relevancy: checks if the answer is about the question.
+- Context precision: checks if the bot found the right paragraphs.
+- Answer correctness: checks if the answer matches the correct answer.
+
+My average scores: (copy the 4 numbers from report.md)
+
+Failure 1: (copy the question from report.md) - The bot failed because ...
+Failure 2: (copy the question from report.md) - The bot failed because ...

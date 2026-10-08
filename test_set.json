@@ -1,0 +1,22 @@
+[
+ {"id":1,"category":"easy","question":"What are the three main types of machine learning?","reference":"The three main types are supervised learning, unsupervised learning and reinforcement learning."},
+ {"id":2,"category":"easy","question":"What is the difference between classification and regression?","reference":"Classification predicts a category (like spam or not spam) while regression predicts a number (like a house price)."},
+ {"id":3,"category":"easy","question":"Which algorithm is mentioned as a popular clustering method?","reference":"K-means."},
+ {"id":4,"category":"easy","question":"What is overfitting?","reference":"Overfitting is when a model memorises the training data, including noise, and performs badly on new data."},
+ {"id":5,"category":"easy","question":"What is the test set used for?","reference":"The test set is used only once at the end to estimate real-world performance."},
+ {"id":6,"category":"easy","question":"In which year was the Transformer architecture introduced and in which paper?","reference":"It was introduced in 2017 in the paper 'Attention Is All You Need'."},
+ {"id":7,"category":"easy","question":"What does RAG stand for?","reference":"Retrieval-Augmented Generation."},
+ {"id":8,"category":"easy","question":"What is a token in the context of LLMs?","reference":"A token is a piece of text such as a whole word, part of a word or a single character into which text is split before an LLM reads it."},
+ {"id":9,"category":"medium","question":"Name four ways to reduce overfitting.","reference":"Collect more data, use regularisation, apply dropout in neural networks, and stop training early."},
+ {"id":10,"category":"medium","question":"What is a common train/validation/test split ratio?","reference":"70 percent training, 15 percent validation and 15 percent test."},
+ {"id":11,"category":"medium","question":"How does a neural network learn?","reference":"It adjusts the weights of its connections using backpropagation together with gradient descent."},
+ {"id":12,"category":"medium","question":"How does temperature affect an LLM's output?","reference":"Temperature close to 0 makes outputs more deterministic; higher values make outputs more creative."},
+ {"id":13,"category":"medium","question":"How is similarity between two embeddings measured?","reference":"With cosine similarity."},
+ {"id":14,"category":"medium","question":"When is the F1 score useful?","reference":"F1 is the harmonic mean of precision and recall and is useful when classes are imbalanced."},
+ {"id":15,"category":"hard","question":"How is RAG different from fine-tuning?","reference":"Fine-tuning changes the model's weights by training on a task-specific dataset, whereas RAG leaves the model unchanged and only adds retrieved chunks to the prompt."},
+ {"id":16,"category":"hard","question":"Why can using chunks that are too large or too small hurt a RAG system?","reference":"Chunks that are too large add noise and cost more tokens; chunks that are too small lose context."},
+ {"id":17,"category":"hard","question":"Why can an LLM hallucinate and how does RAG help with it?","reference":"LLMs can produce confident but false statements (hallucinate); RAG reduces this by giving the model relevant retrieved document chunks to answer from."},
+ {"id":18,"category":"unanswerable","question":"Who is the CEO of OpenAI?","reference":"NOT_IN_DOCS - the documents do not contain this information, so the app should say it does not know."},
+ {"id":19,"category":"unanswerable","question":"How many parameters does GPT-4 have?","reference":"NOT_IN_DOCS - the documents do not state this, so the app should say it does not know."},
+ {"id":20,"category":"hard","question":"Which learning type uses labelled data and which one does not?","reference":"Supervised learning uses labelled data; unsupervised learning works with data that has no labels."}
+]

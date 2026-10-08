@@ -1,0 +1,44 @@
+# Machine Learning Basics
+Machine learning is a branch of artificial intelligence in which computers learn patterns from data instead of being given explicit rules. The three main types are supervised learning, unsupervised learning and reinforcement learning.
+
+# Supervised Learning
+Supervised learning trains a model on labelled examples, where every input has a known correct output. Typical tasks are classification (predicting a category, such as spam or not spam) and regression (predicting a number, such as a house price).
+
+# Unsupervised Learning
+Unsupervised learning finds structure in data that has no labels. Common tasks are clustering, which groups similar items together, and dimensionality reduction, which compresses many features into fewer ones. K-means is a popular clustering algorithm.
+
+# Overfitting
+Overfitting happens when a model memorises the training data, including its noise, and therefore performs badly on new data. Ways to reduce overfitting include collecting more data, using regularisation, applying dropout in neural networks, and stopping training early.
+
+# Train, Validation and Test Sets
+Data is usually split into a training set, a validation set and a test set. The training set is used to fit the model, the validation set is used to tune hyperparameters, and the test set is used only once at the end to estimate real-world performance. A common split is 70 percent training, 15 percent validation and 15 percent test.
+
+# Neural Networks
+A neural network is made of layers of connected units called neurons. Each connection has a weight, and the network learns by adjusting these weights using an algorithm called backpropagation together with gradient descent. A network with many hidden layers is called a deep neural network.
+
+# Transformers
+The Transformer architecture was introduced in the 2017 paper "Attention Is All You Need". It relies on a mechanism called self-attention, which lets the model weigh how important each word in a sentence is to every other word. Transformers are the basis of modern large language models.
+
+# Large Language Models
+A large language model (LLM) is a transformer trained on huge amounts of text to predict the next token. Examples include GPT, Claude, Llama and Gemini. LLMs can write text, answer questions and generate code, but they can also hallucinate, which means producing confident statements that are false.
+
+# Tokens
+LLMs do not read raw words. Text is split into tokens, which can be whole words, parts of words or single characters. The context window is the maximum number of tokens a model can read and write in one request.
+
+# Prompt Engineering
+Prompt engineering is the practice of writing instructions that make an LLM give better answers. Useful techniques include giving clear instructions, providing a few examples (few-shot prompting), and asking the model to reason step by step. Setting the temperature close to 0 makes outputs more deterministic, while higher values make them more creative.
+
+# Retrieval-Augmented Generation
+Retrieval-Augmented Generation (RAG) connects an LLM to an external knowledge source. First the system retrieves the document chunks most relevant to the user's question, then it places those chunks in the prompt so the LLM can answer using them. RAG reduces hallucination and lets the model use private or recent information without retraining.
+
+# Embeddings and Vector Search
+An embedding is a list of numbers that represents the meaning of a piece of text. Texts with similar meaning have embeddings that are close together, which is measured with cosine similarity. A vector database stores embeddings and can quickly find the nearest ones to a query.
+
+# Chunking
+Before documents are stored for RAG they are split into smaller pieces called chunks. Chunks that are too large add noise and cost more tokens, while chunks that are too small lose context. Chunk sizes of 200 to 500 words with a small overlap are a common starting point.
+
+# Evaluating Classifiers
+Accuracy is the share of predictions that are correct. Precision is the share of predicted positives that are truly positive, and recall is the share of actual positives that were found. The F1 score is the harmonic mean of precision and recall and is useful when classes are imbalanced.
+
+# Fine-tuning
+Fine-tuning continues the training of an existing model on a smaller, task-specific dataset so that it adapts to a particular style or domain. It changes the model's weights, whereas RAG leaves the model unchanged and only changes the prompt.
